@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* banner section css start */
+
+header {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner.png);
+
+    min-height: 650px;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+/* Navbar CSS START FROM HERE  */
+.navbar-light {
+    padding-top: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0%;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    transition: .4s all ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #fb414e;
+    color: #fff;
+}
+
+/* Navbar CSS END FROM HERE  */
+.hero-area {
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero-area h1 {
+    color: #fff;
+    font-size: 60px;
+    align-items: center;
+    padding: 0% 12%;
+    font-weight: 700px;
+    margin: 15px 0px;
+}
+
+.hero-area p {
+    font-size: 16px;
+    padding: 0 20%;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin: 35px 0px 40px 0px;
+    line-height: 1.7;
+}
+
+.btn-start {
+    color: #fff;
+    background-color: #fb414e;
+    font-size: 16px;
+    transition: .4s all ease-in-out;
+    padding: .375rem 40px;
+    margin-right: 15px;
+    border-radius: 0px;
+}
+
+.btn-start:hover {
+    color: #fff;
+    background-color: transparent;
+    font-size: 16px;
+    border: 1px solid #fb414e;
+}
+
+.btn-services {
+    color: #fff;
+    background-color: transparent;
+    font-size: 16px;
+    border: 1px solid #fb414e;
+    transition: .4s all ease-in-out;
+    padding: .375rem 30px;
+    border-radius: 0px;
+}
+
+.btn-services:hover {
+
+    color: #fff;
+    background-color: #fb414e;
+    font-size: 16px;
+
+}
+
+/* banner section css end */
+
+/* BOX section css Start */
+.service {
+    padding-bottom: 80px;
+    margin-top: -80px;
+}
+
+.service .box {
+    background-color: #202b30;
+    color: #fff;
+    padding: 10%;
+    transition: .4s all ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.service .box::before {
+    content: '';
+    background-color: #fb414e;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: .4s all ease-in-out;
+}
+
+.service .box:hover::before {
+    transform: scale(1);
+    transform-origin: bottom right;
+
+}
+
+.service .box h5 {
+
+    padding: 0 0 6% 0;
+
+    margin: 0;
+
+    font-size: 20px;
+
+    position: relative;
+
+    padding-bottom: 48px;
+
+    font-weight: 550;
+}
+
+.service .box h5::before {
+    content: '';
+    bottom: 30%;
+    left: 0%;
+    width: 48px;
+    background-color: #fff;
+    position: absolute;
+    height: 2px;
+}
+
+
+.service .box img {
+
+    padding-bottom: 15%;
+}
+
+.service .box p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+/* BOX section css end */
+
+/* Service section css START*/
+.works {
+    padding: 80px 0px;
+}
+
+.works h6 {
+    text-align: center;
+    color: #fb414e;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.works h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.works .visual {
+    color: #fb414e;
+}
+
+.works p {
+    text-align: center;
+    color: #838383;
+    padding: 0 24%;
+    font-size: 16px;
+    margin-bottom: 65px;
+}
+
+.div {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.div img {
+    margin-bottom: 20px;
+}
+
+.div h3 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.div p {
+    padding: 0 5%;
+    margin-bottom: 0;
+}
+
+/* Service section css END */
+/* Detailed section css START */
+.detail {
+    background-color: #202b30;
+    color: #fff;
+    padding: 80px 0px;
+}
+
+.detail h3 {
+    font-size: 35px;
+    font-weight: 700;
+    padding-right: 10%;
+    margin: 15px 0px 35px 0px;
+}
+
+.detail p {
+    padding-right: 9%;
+    font-size: 16px;
+    margin-bottom: 45px;
+    line-height: 1.7;
+}
+
+.detail .btn-custom {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 7px 35px;
+    border-radius: none;
+    position: relative;
+    z-index: 1;
+}
+
+.detail .btn-custom::after {
+    content: '';
+    position: absolute;
+    background-color: #fb414e;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: .4s all ease-in-out;
+    z-index: -1;
+}
+
+.detail .btn-custom:hover::after {
+    transform: scale(1);
+    transform-origin: bottom right;
+}
+
+.detail .btn-custom:hover {
+    border: 1px solid #fb414e;
+
+}
+
+/* Detailed section css END */
+/* Preferance section css Start */
+.preferance {
+    padding: 80px 0;
+}
+
+.preferance p {
+    color: #838383;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    padding-right: 5%;
+}
+
+.preferance h5 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.preferance .fst {
+    margin-bottom: 50px;
+}
+
+.preferance .trd {
+    margin-bottom: 52px;
+}
+
+.preferance h3 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.right-one {
+
+    padding-bottom: 29px;
+}
+
+/* Preferance section css END */
+/* Company section css Start */
+.company {
+    background-color: #202b30;
+    color: #fff;
+}
+
+.company h3 {
+
+    font-size: 39px;
+
+    text-align: end;
+
+    font-weight: 700;
+
+    margin-bottom: 55px;
+
+    padding-top: 15px;
+}
+
+.company p {
+
+    font-size: 14px;
+
+    text-align: end;
+
+    color: #949799;
+}
+
+/* Company section css END */
+/* HandCrafted section css Start */
+.handcraft {
+    background-color: #f7f7f9;
+}
+
+.head {
+
+    padding: 50px 0 25px 0;
+}
+
+.handcraft .head h3 {
+    font-size: 38px;
+    font-weight: 700;
+    padding-bottom: 22px;
+    padding-right: 4%;
+}
+
+.handcraft .head p {
+    color: #838383;
+    font-size: 16px;
+    padding-right: 3%;
+    padding-bottom: 30px;
+}
+
+.handcraft .first h3 {
+    font-weight: 550;
+    padding: 20px 0px;
+    margin: 0;
+    font-size: 20px;
+    color: #5e5e5e;
+}
+
+.handcraft .first p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.handcraft .second h3 {
+    font-weight: 550;
+    padding: 20px 0px;
+    margin: 0;
+    font-size: 20px;
+    color: #5e5e5e;
+}
+
+.handcraft .second p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* HandCrafted section css END */
+/* Contact section css Start */
+.contact {
+    padding: 80px 0;
+}
+
+.contact h3 {
+    font-size: 59px;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    line-height: 1.7;
+    color: #838383;
+    text-align: right;
+    margin-bottom: 30px;
+    padding-left: 8%;
+}
+
+.contact form {
+    padding-top: 20px;
+}
+
+.contact form .form-row {
+    margin-bottom: 20px;
+}
+
+.contact form .form-control {
+    border-radius: inherit;
+    border: 1px solid #000000;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.contact form .btn-custom {
+    background-color: #fb414e;
+    color: #fff;
+    border-radius: 0;
+    padding: 12px;
+    transition: .4s all ease-in-out;
+}
+
+.contact form .btn-custom:hover {
+    background-color: #fb0314;
+}
+
+/* Contact section css END */
+/* Footer section css Start */
+footer {
+    background-color: #202b30;
+    color: #6c777c;
+}
+
+footer p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+/* Footer section css END */
