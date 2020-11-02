@@ -36,6 +36,11 @@ header {
     padding-top: 30px;
 }
 
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
     font-size: 16px;
@@ -44,11 +49,22 @@ header {
     margin-left: 30px;
     font-family: 'Roboto', sans-serif;
     transition: .4s all ease-in-out;
+    position: relative;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-    border-bottom: 2px solid #fb414e;
-    color: #fff;
+.navbar-light .navbar-nav .nav-link::before {
+    content: '';
+    bottom: -5px;
+    left: 0%;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #fb414e;
+    transition: .4s all ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before {
+    width: 100%;
 }
 
 /* Navbar CSS END FROM HERE  */
